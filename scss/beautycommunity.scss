@@ -1,0 +1,447 @@
+@import url("reset.css");
+* {
+  font-family: "Helvetica Neue", "Tahoma", "Helvetica", "Arial", "WenQuanYi Zen Hei", "Hiragino Sans GB", "LiHei Pro", "Heiti TC", "Microsoft JhengHei UI", "Microsoft JhengHei", "sans-serif","蘋方-繁";
+	font-size: 16px;
+}
+
+.mainmark{
+	position: relative;
+}
+.movebtn{
+	position: absolute;
+	animation: movebtn 1s infinite 1s  alternate;
+}
+
+@keyframes movebtn {
+	0%    { left: 0px; top: 0px;}
+  50%   { left: 0px; top: 5px;}
+	100%  { left: 0px; top: 0px;}
+}
+
+//gotopbotton
+#gotop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #c13333;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 20px 17px;
+  border-radius: 50%;
+  z-index: 999;
+}
+
+//common
+$colorblock: #000;
+$colorWhite: #fff;
+$colorblue: #37dae9;
+$colorpink: #ffb6b6;
+$colorred: #d51010;
+
+
+.frame{
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 60px 0;
+}
+
+.sm{
+	display: none;
+}
+
+.lg{
+	display: block;
+}
+
+p{
+  color: $colorblock;
+  font-size: 1.125rem;
+  line-height: 2;
+  text-align: justify;
+}
+
+
+.one_time,.two_intro,.three_BeautyBuffet,.four_BeautyCottage,.five_mov,.six_mov{
+ .frame{
+ 	.title{
+ 		margin-bottom: 36px;
+ 		img{
+ 			display: block;
+			margin: auto;
+ 		}
+ 	}
+ }
+}
+
+.header {
+	z-index: 1000;
+	position: fixed;
+	top: 0;
+	background-color: #d0151a;
+	width: 100%;
+	transition: top 0.4s ease-in-out;
+	display: flex;
+	.headerbox {
+  	width: 1000px;
+  	margin: 0px auto 0px auto;
+  	display: flex;
+  	justify-content: space-between;
+  	height: 50px;
+  	align-items: center;
+  	.PChomeThailogo img {
+			width: 200px;
+			height: auto;
+			margin-left: 10px;
+		}
+		a:hover {
+		  padding-top: 2px;
+		  
+		}
+	}
+}
+
+.body{
+	overflow: hidden;
+	.KV{
+		background-color: #fbf0da;
+		background-image: url(../imgs/KV_bg.jpg);
+    background-position: center;
+    .frame{
+    	display: flex;
+    	justify-content: center;
+    	.mainmark{
+    		position: relative;
+    		margin-top: 53px;
+    		.KV_btn{
+    			position: absolute;
+    			margin-top: 72%;
+    			margin-left: 75%;
+    		}
+    	}
+    }
+  }
+  .one_time,.five_mov{
+  	background-color: $colorWhite;
+  	.frame{
+  		.title{
+  			margin-bottom: 36px;
+  			img{
+	  			display: block;
+	  			margin: auto;
+  			}
+  		}
+  	}
+  }
+  .one_time{
+  	.frame{
+  		height:660px;
+  		.content{
+  			.one_pic01{
+  				position: absolute;
+  			}
+  			.one_pic02{
+  				position: relative;
+  				top: -14px;
+    			left: 364px;
+    			cursor: pointer;
+  			}
+  			.one_pic03{
+  				position: relative;
+  				top: 37px;
+  				left: 433px;
+  				cursor: pointer;
+  			}
+  			.one_pic04{
+  				position: relative;
+  				top: 93px;
+    			left: 352px;
+    			cursor: pointer;
+  			}
+  		}
+  	}
+  }
+  .two_intro,.three_BeautyBuffet,.four_BeautyCottage{
+  	background-color: $colorblue;
+  	.frame{
+  		.title{}
+  		.content{
+  			.box01{
+  				display: flex;
+  				margin-bottom: 30px;
+	  			.text,.pic{
+	  				width: 50%;
+	  			}
+	  			.pic img{
+	  				width: 100%;
+	  			}
+	  			.text{
+	  				margin-right: 50px;
+	  			}
+  			}
+  			.box02{
+  				background-color: rgba(0,0,0,0.1);
+  				border-radius: 20px;
+  				padding: 25px 5%;
+  				text-align: center;
+  				margin-bottom: 20px;
+
+  				h1{
+  					color:$colorWhite;
+  					font-size: 1.25rem;
+  					margin-bottom: 10px;
+  				}
+  				.wrap{
+  					display: flex;
+  					.box02_01{
+  						flex-grow:1;
+  						margin: 15px;
+  						.pdpic{
+  							background-color: $colorWhite;
+  							border-radius: 50%;
+  							opacity: 1;
+  							padding: 28px;
+  							margin: 14px 0;
+  							img{
+	  							width: 100%;
+	  							color: #888;
+	  							opacity: .6;
+	  						}
+  						}
+  						
+  						p{
+  							color:$colorWhite;
+  							text-align: center;}
+  					}
+  				}
+  			}
+  			.box03{
+  				.w100{
+	  				width: 100%;
+	  				span{
+	  					color: $colorred;
+	  					color: #f44336;
+	  				}
+	  			}
+  			}
+  			.box04{
+  				display: flex;
+  				justify-content: center;
+  				img{
+  					// width: 50%;
+  				}
+  			}
+  		}
+  	}
+  }
+  .three_BeautyBuffet,.four_BeautyCottage{
+  	background-color: $colorpink;
+  	.mr0{
+  		margin-right: 0 !important;
+  		margin-left: 50px;
+  	}
+  	.w1200{
+			max-width: 1200px;
+			margin: 0 auto;
+			img{
+				width: 100%;
+			}
+		}
+  }
+  .four_BeautyCottage{
+  	background-color: $colorblue;
+  }
+  .five_mov{
+  	.frame{
+  		.box_mov{
+  			iframe{
+  				margin: 0 auto;
+    			display: block;
+  			}
+  		}
+  	}
+  }
+	.six_more{
+		background-color: $colorpink;
+		.frame{
+			position: relative;
+			a{
+				.box_df{
+					display: flex;
+				  flex-wrap: wrap;
+					opacity: .4;
+					img{
+						width: 35%;
+					}
+					img:first-child,img:last-child{
+						width: 65%;
+					}
+				} 
+			}
+			.button{
+				position: absolute;
+				top: calc(50% - 30px);
+				left: calc(50% - 100px);
+				z-index: 999;
+				a{
+					color: #fff;
+					text-decoration: none;
+					font-size: 1.5rem;
+					font-weight: 200;
+					background-color: $colorblock;
+					padding: 30px 50px;
+				}
+		  }
+		  .box_df:hover{
+		  	opacity: 1;
+		  }
+		}
+	}
+}
+.footer{
+	background-color: #a4a3a2;
+	color: #fff;
+	text-align: center;
+  padding: 10px;
+  font-size: 0.875rem;
+}
+
+
+@media screen and (max-width:1000px) { 
+	.frame{
+		margin: 0 5%;
+	}
+	.body{
+		.one_time .frame .content img{
+			width: 100%;
+		}
+	}
+	.two_intro .frame .content .box04 img{
+		width: 50%;
+	}
+	.body .one_time{
+  	.frame{
+  		height: 550px;
+  		.content{
+  			.one_pic01{
+  			}
+  			.one_pic02{
+  				width: 50%;
+  			}
+  			.one_pic03{
+  				top: 66px;
+    			left: 392px;
+  				width: 50%;
+  			}
+  			.one_pic04{
+  				top: 138px;
+    			left: 290px;
+  				width: 50%;
+  			}
+  		}
+  	}
+  }
+  .body .two_intro .frame .content .box02 .wrap .box02_01 .pdpic{
+  	padding: 15px;
+  }
+}
+
+@media screen and (max-width:768px) {
+	p{
+		font-size: 14px;
+		line-height: 1.6;
+	}
+	.sm{
+		display: block;
+	}
+	.lg{
+		display: none;
+	}
+	.body .KV .frame{
+		padding: 50px 0 10px 0;
+		.mainmark{
+			margin-top: 10px;
+			.KV_title{
+				img{
+					width: 100%;
+				}
+			}
+			.KV_btn{
+				img{
+					width: 20vw;
+				}
+			} 
+		} 
+	} 
+	.one_time,.two_intro,.three_BeautyBuffet,.four_BeautyCottage,.five_mov,.six_mov{
+		.frame{
+			padding: 20px 0;
+		 	.title{
+		 		margin-bottom: 5px;
+		 	}
+		}
+	}
+	.body .two_intro .frame .content .box01{
+		.text,.pic{
+			width: 100%;
+		}
+	}
+	.body{
+		.two_intro,.three_BeautyBuffet,.four_BeautyCottage{
+	  	.frame{
+	  		.content{
+	  			.box01{
+	  				display: block;
+		  			.text,.pic{
+		  				width: 100%;
+		  			}
+	  			}
+	  		}
+	  	}
+	  }
+  }
+
+  .body .five_mov .frame .box_mov iframe {
+    width: 100%;
+  }
+  .body .one_time .frame{
+  		height: auto;
+	}
+	.body .two_intro .frame .content .box02 .wrap{
+		flex-wrap: wrap;
+		justify-content: center;
+		.box02_01{
+			flex-grow: 0;
+			width: 28%;
+			margin: 6px;
+		}
+	}
+	.body .six_more .frame .button{
+    top: calc(50% - 7px);
+    left: calc(50% - 60px);
+		a {
+	    font-size: 1rem;
+	    font-weight: 200;
+	    padding: 10px 31px;
+		}
+	} 
+}
+
+@media screen and (max-width:500px) {
+	.one_time,.two_intro,.three_BeautyBuffet,.four_BeautyCottage,.five_mov,.six_mov{
+		.frame{
+		 	.title{
+		 		img{
+		 			width: 100vw;
+		 		}
+		 	}
+		}
+	}
+}
+
+
+
